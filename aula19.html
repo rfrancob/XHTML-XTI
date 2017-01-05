@@ -1,26 +1,39 @@
 <html>
     <head>
-        <title>XHTML AULA 18</title>
+        <meta http-equiv="Content-Type" content="text/html"; charset="utf-8" />
+        <title>XHTML AULA 19</title>
     </head>
     <body >
-        <form action="aula18.html" method="GET">
-            Nome:<input type="text" id="nome" /><br />
-            Senha:<input type="password" id="senha" /><br />
-            Sexo:
-            <input type="radio" name="sexo" value="M" />Masculino
-            <input type="radio" name="sexo" value="F" />Feminino<br />
-            Conhecimentos:
-            <input type="checkbox" name="conhecimentos" value="java" />Java
-            <input type="checkbox" name="conhecimentos" value="html" />HTML
-            <input type="checkbox" name="conhecimentos" value="css" />CSS
-            <input type="checkbox" name="conhecimentos" value="xslt" />XSLT<br />
-            Curriculo:<input type="file" id="curriculo" /><br />
-            <input type="submit" value="Enviar" />
-            <input type="reset" value="Limpar" />
-            <input type="button" value="Validar Formul&aacute;rio" /><br />
+        <form action="aula19.html" method="GET">
+            
+            <input type="hidden" id="chave" value="" />
 
-            Resumo:<br />
-            <textarea rows="6" cols="40">Escreva seu resumo</textarea><br />
+            <fieldset>
+                <legend>Informações Pessoais</legend>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" value="Internauta" readonly="readonly" tabindex="4" accesskey="N" /><br />
+                <label for="senha">Senha:
+                    <input type="password" id="senha" /><br />
+                </label>
+                Sexo:
+                <input type="radio" name="sexo" value="M" tabindex="3" />Masculino
+                <input type="radio" name="sexo" value="F" tabindex="2"/>Feminino<br />
+            </fieldset>
+            <fieldset>
+                <legend>Informações Profissionais</legend>
+                Conhecimentos:
+                <input type="checkbox" name="conhecimentos" value="java" />Java
+                <input type="checkbox" name="conhecimentos" value="html" />HTML
+                <input type="checkbox" name="conhecimentos" value="css" />CSS
+                <input type="checkbox" name="conhecimentos" value="xslt" />XSLT<br />
+                Curriculo:<input type="file" id="curriculo" /><br />
+                <input type="submit" value="Enviar" />
+                <input type="reset" value="Limpar" />
+                <input type="button" value="Validar Formul&aacute;rio" /><br />
+
+                Resumo:<br />
+                <textarea rows="6" cols="40" tabindex="1">Escreva seu resumo</textarea><br />
+            </fieldset>
 
             Pa&iacute;s:<select id="pais">
                 <option>Selecione</option>
