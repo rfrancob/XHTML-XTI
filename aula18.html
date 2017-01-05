@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>XHTML AULA 18</title>
+    </head>
+    <body >
+        <form action="aula18.html" method="GET">
+            Nome:<input type="text" id="nome" /><br />
+            Senha:<input type="password" id="senha" /><br />
+            Sexo:
+            <input type="radio" name="sexo" value="M" />Masculino
+            <input type="radio" name="sexo" value="F" />Feminino<br />
+            Conhecimentos:
+            <input type="checkbox" name="conhecimentos" value="java" />Java
+            <input type="checkbox" name="conhecimentos" value="html" />HTML
+            <input type="checkbox" name="conhecimentos" value="css" />CSS
+            <input type="checkbox" name="conhecimentos" value="xslt" />XSLT<br />
+            Curriculo:<input type="file" id="curriculo" /><br />
+            <input type="submit" value="Enviar" />
+            <input type="reset" value="Limpar" />
+            <input type="button" value="Validar Formul&aacute;rio" /><br />
+
+            Resumo:<br />
+            <textarea rows="6" cols="40">Escreva seu resumo</textarea><br />
+
+            Pa&iacute;s:<select id="pais">
+                <option>Selecione</option>
+                <option>Brasil</option>
+                <option>China</option>
+                <option>EUA</option>
+                <option>Jap&atilde;o</option>
+                <option>Argentina</option>
+            </select><br />
+            Editores ou Navegadores: <select id="en">
+                    <option>Selecione</option>
+                <optgroup label="Editores">
+                    <option>Visual Studio Code</option>
+                    <option>Notepad++</option>
+                    <option>DreamWeaver</option>
+                    <option>HTML-Kit</option>
+                </optgroup>
+                <optgroup label="Navegadores">
+                    <option>Firefox</option>
+                    <option>IE</option>
+                    <option>Chrome</option>
+                    <option>Opera</option>
+                </optgroup>
+            </select>
+
+        </form>
+    </body>
+</html>
